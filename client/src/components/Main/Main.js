@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import socket from '../../socket';
-import Chat from '../Chat/Chat';
 
 const Main = (props) => {
   const roomRef = useRef();
