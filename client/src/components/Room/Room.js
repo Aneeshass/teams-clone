@@ -41,7 +41,7 @@ const Room = (props) => {
 
         socket.emit('BE-join-room', { roomId, userName: currentUser });
         socket.on('FE-user-join', (users) => {
-          // all users
+     
           const peers = [];
           users.forEach(({ userId, info }) => {
             let { userName, video, audio } = info;
@@ -208,10 +208,6 @@ const Room = (props) => {
   };
 
   const goToBack = () => {
-   // const goToBack = (e) => {
-    // e.preventDefault();
-    // socket.emit('BE-leave-room', { roomId, leaver: currentUser });
-    // sessionStorage.removeItem('user');
     window.location.href = `/chat/${roomId}`;
   };
 
@@ -279,9 +275,7 @@ const Room = (props) => {
       recordedChunks.push(event.data);
       console.log(recordedChunks);
       download();
-    } //else {
-      // ...
-    //}
+    } 
   }
   function download() {
     var blob = new Blob(recordedChunks, {
@@ -349,13 +343,10 @@ const Room = (props) => {
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
     } else if (elem.mozRequestFullScreen) {
-      /* Firefox */
       elem.mozRequestFullScreen();
     } else if (elem.webkitRequestFullscreen) {
-      /* Chrome, Safari & Opera */
       elem.webkitRequestFullscreen();
     } else if (elem.msRequestFullscreen) {
-      /* IE/Edge */
       elem.msRequestFullscreen();
     }
   };
@@ -367,7 +358,6 @@ const Room = (props) => {
   }
 
   return (
-    //<video>
     <RoomContainer onClick={clickBackground}>
       <VideoAndBarContainer>
         <VideoContainer>
@@ -409,7 +399,6 @@ const Room = (props) => {
       </VideoAndBarContainer>
       <Chat display={displayChat} roomId={roomId} />
     </RoomContainer>
-    //</video>
   );
 };
 

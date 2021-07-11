@@ -17,7 +17,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-// Route
 app.get('/ping', (req, res) => {
   res
     .send({
@@ -26,7 +25,6 @@ app.get('/ping', (req, res) => {
     .status(200);
 });
 
-// Socket
 io.on('connection', (socket) => {
   console.log(`New User connected: ${socket.id}`);
 
@@ -48,24 +46,19 @@ io.on('connection', (socket) => {
     });
   });
 
-  /**
-   * Join Room
-   */
   socket.on('BE-join-room', ({ roomId, userName }) => {
-    // Socket Join RoomName
+ 
     socket.join(roomId);
     socketList[socket.id] = { userName, video: true, audio: true };
 
-    // Set User List
     io.sockets.in(roomId).clients((err, clients) => {
       try {
         const users = [];
         clients.forEach((client) => {
-          // Add User List
+  
           users.push({ userId: client, info: socketList[client] });
         });
         socket.broadcast.to(roomId).emit('FE-user-join', users);
-        // io.sockets.in(roomId).emit('FE-user-join', users);
       } catch (e) {
         io.sockets.in(roomId).emit('FE-error-user-exist', { err: true });
       }
