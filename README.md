@@ -1,8 +1,8 @@
-# Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
-# Welcome to my Teams-clone
+# Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Welcome to my Teams clone
 This is a multiuser video calling app with features such as screen sharing, recoding and chatting, along with other basic features.  
+![main page](screenshots/ss1.png)  
 This project is deployed on heroku at: https://macrohard-solo.herokuapp.com/
-# Made using:
+# Technologies and Tools:
 ![](https://img.shields.io/badge/OS-Windows-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Editor-VSCode-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
@@ -21,7 +21,9 @@ This project is deployed on heroku at: https://macrohard-solo.herokuapp.com/
 * Not just that, but this application has a **chat area** where users can chat with those in the call, **before the call starts and after the call ends** as well.  
 * This app also provides a few other features alongside, such as, **sharing your screen** with everyone in the call, **recording a call and downloading** (.webm format) it to go over the meeting after it ends as well.  
 * There are also features which provides the user with the **number of participants** present in the call or in the chat room.  
-* The users can also **invite** more people by sharing the room id using the invite button.
+* The users can also **invite** more people by sharing the room id using the invite button.  
+![main page](screenshots/ss2.png)  
+![main page](screenshots/ss3.png)  
 # Documentation
 For a more detailed description and walk-through of the process, refer to the documentation document in this repository.
 # Installation
