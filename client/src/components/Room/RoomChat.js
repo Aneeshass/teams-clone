@@ -174,7 +174,7 @@ const RoomChat = (props) => {
       <h3>~ Expand Video to focus </h3>
       <h3>~ Record Meetings</h3>
       <h3>~ Invite others</h3>
-      <h3>~ ENJOY!<span role="img" aria-label="sparkle">✨</h3>
+      <h3>~ ENJOY!<span role="img" aria-label="sparkle">✨</span></h3>
       
       <Bar>
          <CallButton onClick={call}>Call</CallButton>
