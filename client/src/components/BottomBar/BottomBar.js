@@ -11,15 +11,15 @@ const BottomBar = ({
   record,
   invite,
   screenShare,
-  participants,
-  setShowVideoDevices
+  participants
+//   setShowVideoDevices
 }) => {
-  const handleToggle = useCallback(
-    (e) => {
-      setShowVideoDevices((state) => !state);
-    },
-    [setShowVideoDevices]
-  );
+//   const handleToggle = useCallback(
+//     (e) => {
+//       setShowVideoDevices((state) => !state);
+//     },
+//     [setShowVideoDevices]
+//   );
 
   return (
     <Bar>
