@@ -94,21 +94,11 @@ const Chat = ({ display, roomId }) => {
         </MessageList>
       </ChatArea>
       <Center>
-      <EmojiButton1 onClick={clickEmoji1}>
-         <span role="img" aria-label="thumbsup">👍</span>
-      </EmojiButton1>
-      <EmojiButton2 onClick={clickEmoji2}>
-         <span role="img" aria-label="thumbsdown">👎</span>
-      </EmojiButton2>
-      <EmojiButton3 onClick={clickEmoji3}>
-         <span role="img" aria-label="clap">👏</span>
-      </EmojiButton3>
-      <EmojiButton4 onClick={clickEmoji4}> 
-         <span role="img" aria-label="smiley">😃</span>
-      </EmojiButton4>
-      <EmojiButton5 onClick={clickEmoji5}>
-        <span role="img" aria-label="heart">❤️</span>
-      </EmojiButton5>
+      <EmojiButton1 onClick={clickEmoji1}>👍</EmojiButton1>
+      <EmojiButton2 onClick={clickEmoji2}>👎</EmojiButton2>
+      <EmojiButton3 onClick={clickEmoji3}>👏</EmojiButton3>
+      <EmojiButton4 onClick={clickEmoji4}>😃</EmojiButton4>
+      <EmojiButton5 onClick={clickEmoji5}>❤️</EmojiButton5>
       </Center>
       <BottomInput
         ref={inputRef}
