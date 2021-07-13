@@ -19,7 +19,7 @@ This project is deployed on heroku at: https://macrohard-solo.herokuapp.com/
 * This app allows you to create a room with your provided room name/id with you can share amongst those whom you want to connect.  
 * Along with the basic functionality of **turning on/off your video and audio**, more specifically, this app allows users to **chat during the call**, without disrupting the flow of the call.  
 * Not just that, but this application has a **chat area** where users can chat with those in the call, **before the call starts and after the call ends** as well.  
-* This app also provides a few other features alongside, such as, **sharing your screen** (one at a time) with everyone in the call, **recording a call and downloading** (.webm format) it to go over the meeting after it ends as well.  
+* This app also provides a few other features alongside, such as, **sharing your screen** with everyone in the call, **recording a call and downloading** (.webm format) it to go over the meeting after it ends as well.  
 * There are also features which provides the user with the **number of participants** present in the call or in the chat room.  
 * The users can also **expand the stream** of any user in the call they want to focus on.
 * The users can also **invite** more people by sharing the room id using the invite button.  
